@@ -10,7 +10,7 @@ public class Problem6_16 {
 		//Prompt the user to enter year 
 		System.out.print("Enter full year (e.g. 2016): ");
 		int year = input.nextInt();
-		
+		// JA: Yopu had to print all the years from 2000 to 2020
 		System.out.print("The number of days this year is: " + getTotalNumberOfDays(year));
 
 	}

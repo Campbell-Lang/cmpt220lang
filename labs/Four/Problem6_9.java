@@ -1,5 +1,5 @@
 package cmpt220;
-
+// JA: The problem was feet to meters
 public class Problem6_9 {
 	public static void main(String[] args) {
 		String pound = "Pound";
