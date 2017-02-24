@@ -2,7 +2,7 @@ package cmpt220;
 
 import java.util.Scanner;
 
-public class Problem8_55 {
+public class Problem8_7 {
 
 		 public static void main(String[] args) {
 			 Scanner input = new Scanner(System.in);
@@ -34,13 +34,13 @@ public class Problem8_55 {
 				}
 				//Display result
 				System.out.println("The closest two points are " + " (" + points[p1][0] + ", " + points[p1][1] + ") and (" 
-				+ points[p2][0] + ", " + points[p2][1] + ")");
+				+ points[p2][0] + ", " + points[p2][1] + ")"); // JA: You should print z
 			}
 
 			
 			private static double distance(double x1, double y1, double x2, double y2) {
 				// TODO Auto-generated method stub
-				return Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+				return Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)); // JA: These are three dimensional points. Missing z.
 			}
 
 	}
