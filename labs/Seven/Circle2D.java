@@ -92,9 +92,9 @@ public class Circle2D{
 
 	    }
 
-	    private MyPoint getPoint() {
-	        return new MyPoint(this.x, this.y);
-	    }
+//	    private MyPoint getPoint() {
+//	        return new MyPoint(this.x, this.y);
+//	    }
 
 	    @Override
 	    public String toString() {
