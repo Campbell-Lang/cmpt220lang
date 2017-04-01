@@ -1,5 +1,6 @@
 package cmpt220;
 
+// JA: There is no class to test this
 import java.util.ArrayList;
 
 public class Problem11_5 {
