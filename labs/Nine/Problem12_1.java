@@ -8,9 +8,10 @@ public class Problem12_1 {
 	            allInOne += arg;
 	        }
 	        
-	        String[] tokens = MyString2.split(allInOne, "[+-*/]");
+			// JA: Where is class MyString2 declared?
+//	        String[] tokens = MyString2.split(allInOne, "[+-*/]");
 
-	        if (tokens.length != 3) {
+	        if (args.length != 3) { // JA
 	            System.out.println("Usage: java Calculator \"operand1 operator operand2\"");
 	            System.exit(0);
 	        }
@@ -19,26 +20,26 @@ public class Problem12_1 {
 
 	        try {
 
-	            switch (tokens[1].charAt(0)) {
+	            switch (args[1].charAt(0)) { // JA
 	                case '+':
-	                    result = Integer.parseInt(tokens[0]) + Integer.parseInt(tokens[2]);
+	                    result = Integer.parseInt(args[0]) + Integer.parseInt(args[2]); // JA
 	                    break;
 	                case '-':
-	                    result = Integer.parseInt(tokens[0]) - Integer.parseInt(tokens[2]);
+	                    result = Integer.parseInt(args[0]) - Integer.parseInt(args[2]); // JA
 	                    break;
 	                case '*':
-	                    result = Integer.parseInt(tokens[0]) * Integer.parseInt(tokens[2]);
+	                    result = Integer.parseInt(args[0]) * Integer.parseInt(args[2]); // JA
 	                    break;
 	                case '/':
-	                    result = Integer.parseInt(tokens[0]) / Integer.parseInt(tokens[2]);
+	                    result = Integer.parseInt(args[0]) / Integer.parseInt(args[2]); // JA
 	            }
 	        } catch (NumberFormatException ex) {
 	            System.out.println("ERROR "+ ex.getMessage());
 	            System.exit(0);
 	        }
 
-	        System.out.println(tokens[0] + ' ' + tokens[1] + ' '
-	                + tokens[2] + " = " + result);
+	        System.out.println(args[0] + ' ' + args[1] + ' ' 
+	                + args[2] + " = " + result); // JA
 	    }
 
 	    public static boolean isNumeric(String s) {
